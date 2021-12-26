@@ -1,4 +1,5 @@
-----> Steps to execute the project
+# Search & Rescue using turtlebot
+Steps to execute the project:
 
 To run the package:
 To set the ArUco markers:

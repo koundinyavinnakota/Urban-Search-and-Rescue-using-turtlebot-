@@ -27,6 +27,7 @@ sudo apt-get install python3-catkin-tools
 ```
 source /opt/ros/noetic/setup.bashs
 git clone https://github.com/koundinyavinnakota/Search-Rescue-using-turtlebot-.git
+```
 - To Install all dependencies 
 ```
 cd final_project/script

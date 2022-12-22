@@ -27,19 +27,15 @@ sudo apt-get install python3-catkin-tools
 ```
 source /opt/ros/noetic/setup.bashs
 git clone https://github.com/koundinyavinnakota/Search-Rescue-using-turtlebot-.git
+- To Install all dependencies 
+```
+cd final_project/script
+sudo chmod a+rwx install.bash
+./install.bash
 cd ..
 catkin build final_project
 source /opt/ros/noetic/setup.bash
 ```
-
-## To Install all dependencies 
-- Open a new terminal and navigate to cloned repository folder
-```
-cd ros1_ws/src/final_project/script
-sudo chmod a+rwx install.bash
-./install.bash
-```
-
 ## To launch the simulation
 -After building the project
 - Naviagate to the workspace

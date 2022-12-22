@@ -52,4 +52,8 @@ source devel/setup.bash
 rosrun final_project final_project_node
 ```
 
+Gazebo & Rviz visual of the Simulation          
+:-------------------------:|
+<img src="/resources/Search_recue_example_1.png" width="400" alt="Alt text" title=""> |
+
 #### Video of simulation [here](https://drive.google.com/file/d/1l2H_O-9uJx8seZBkI55smP-waWNU-k-K/view?usp=share_link)

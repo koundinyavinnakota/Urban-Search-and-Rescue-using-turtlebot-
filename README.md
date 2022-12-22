@@ -7,6 +7,7 @@ US & R -  Robots
 :-------------------------:|
 <img src="/resources/Search_recue_example.png" width="400" alt="Alt text" title=""> |
 
+## Dependecies
 - Ubuntu 20.04 LTS 
 - ROS Noetic
 

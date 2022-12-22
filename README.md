@@ -1,15 +1,54 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 # Search & Rescue using turtlebot
-In this project, showcases the simulation of search and rescue operation during disasters. There are two turtlebots, one as "explorer" and the other as "follower". The explorer job is to explore the area, build a map and locate victims (but in this project map is already built) and store the location of the victims, go back to startng point and pass the location date to the follower. The follower will then visit all locations which was passed by explorer and save/rescue the victims.
 
-Steps to execute the project:
+## This project is inspired by the the challenge of autonomous robotics for Urban Search and Rescue (US&R). In US&R after a disaster occurs, a robot is used to explore an unknown environment, such as a partially collapsed building, and locates trapped or unconscious human victims of the disaster (see examples of robots in below figure). The robot builds a map of the collapsed building as it ex- plores, and places markers in the map of where the victims are located. This map is then given to trained First Responders who use it to go into the building and rescue the victims.
+  
+US & R -  Robots             |  US & R -  Robots  | 
+:-------------------------:|:-------------------------:|
+<img src="/resources/Search_recue_example.png" width="275" alt="Alt text" title=""> | s
 
-To run the package:
-To set the ArUco markers:
-- exportGAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:/home/username/catkin_ws/src/Search-Rescue-using-turtlebot--main/models
--Place the package in you catkin workspace
-- Build the package using catkin build Search-Rescue-using-turtlebot--main
+- Ubuntu 20.04 LTS 
+- ROS Noetic
 
-Run the following commands to launch and simulate:
-- roslaunch final_project multiple_robots.launch
-- rosrun final_project final_project_node
+## Installing catkin tools
+```
+sudo sh \
+    -c 'echo "deb http://packages.ros.org/ros/ubuntu `lsb_release -sc` main" \
+        > /etc/apt/sources.list.d/ros-latest.list'
+wget http://packages.ros.org/ros.key -O - | sudo apt-key add -
+sudo apt-get update
+sudo apt-get install python3-catkin-tools
 
+```
+## Building the package
+- Naviagate to you ros workspace and go into src
+```
+source /opt/ros/noetic/setup.bashs
+git clone https://github.com/koundinyavinnakota/Search-Rescue-using-turtlebot-.git
+cd ..
+catkin build final_project
+source /opt/ros/noetic/setup.bash
+```
+
+## To Install all dependencies 
+- Open a new terminal and navigate to cloned repository folder
+```
+cd ros1_ws/src/final_project/script
+sudo chmod a+rwx install.bash
+./install.bash
+```
+
+## To launch the simulation
+-After building the project
+- Naviagate to the workspace
+```
+source devel/setup.bash
+roslaunch final_project multiple_robots.launch
+```
+- In a another terminal, navigate to ros1 workspace
+```
+source devel/setup.bash
+rosrun final_project final_project_node
+```
+
+#### Video of simulation [here](https://drive.google.com/file/d/1l2H_O-9uJx8seZBkI55smP-waWNU-k-K/view?usp=share_link)

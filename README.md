@@ -25,7 +25,7 @@ sudo apt-get install python3-catkin-tools
 ## Building the package
 - Naviagate to you ros workspace and go into src
 ```
-source /opt/ros/noetic/setup.bashs
+source /opt/ros/noetic/setup.bash
 git clone https://github.com/koundinyavinnakota/Search-Rescue-using-turtlebot-.git
 ```
 - To Install all dependencies 
